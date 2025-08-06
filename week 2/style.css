@@ -1,0 +1,35 @@
+h1 {
+  color: blueviolet;
+  font-weight: bold;
+  font-size: 32px;
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: beige;
+}
+
+h2 {
+  color: limegreen;
+  border: 1px dashed green;
+}
+
+.blue-color {
+  color: blue;
+}
+
+#purple-color,
+h3 {
+  color: purple;
+}
+
+section {
+  text-align: center;
+  border: 2px solid crimson;
+  background-color: aquamarine;
+}
