@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  text-align: center;
+  font: 1.3rem;
+}
+
+h1 {
+  font-size: 2.5;
+}
+
+p {
+  width: 400px;
+  margin: 0 auto;
+  border: 1px solid crimson;
+  background-color: beige;
+  height: 200px;
+  min-width: 200px;
+  margin-bottom: 30px;
+}
