@@ -1,6 +1,6 @@
 body {
   font-family: "Raleway", sans-serif;
-  background: #fdfdfd;
+  background-image: #e88aad;
   margin: 0;
   padding: 0;
   color: #333;
@@ -71,6 +71,10 @@ header p {
 }
 .section {
   margin-top: 30px;
+}
+
+article1 {
+  color: #e88aad;
 }
 
 .section h2 {

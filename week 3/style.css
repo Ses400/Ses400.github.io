@@ -8,7 +8,7 @@ h1 {
   font-size: 2.5;
 }
 
-p {
+.p {
   width: 400px;
   margin: 0 auto;
   border: 1px solid crimson;
@@ -16,4 +16,22 @@ p {
   height: 200px;
   min-width: 200px;
   margin-bottom: 30px;
+  padding: 20px;
+  border-left: dashed red;
+}
+
+.vcenter {
+  line-height: 160px;
+}
+
+span {
+  color: red;
+  display: none;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 20px;
 }
