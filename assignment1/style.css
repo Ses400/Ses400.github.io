@@ -1,0 +1,101 @@
+body {
+  font-family: "Raleway", sans-serif;
+  background: #fdfdfd;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+article {
+  margin-bottom: 1rem;
+  cursor: pointer;
+  background: white;
+  transition: 100ms;
+  &:hover {
+    background: var(--custom_color);
+  }
+
+  /* https://minjeaseo.com/ */
+  a:link {
+    color: #e88aad;
+    text-decoration: none;
+  }
+
+  /* https://minjeaseo.com/ */
+  a:visited {
+    color: #e88aad;
+    text-decoration: none;
+  }
+
+  /* https://minjeaseo.com/*/
+  a:active {
+    color: #e88aad;
+    text-decoration: none;
+  }
+
+  /* https://minjeaseo.com/*/
+  a:hover {
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+header img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+header h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  color: #e88aad;
+  margin: 0;
+}
+header p {
+  font-weight: 500;
+  color: #555;
+  margin-top: 5px;
+}
+.section {
+  margin-top: 30px;
+}
+
+.section h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  color: #e88aad;
+  border-bottom: 2px solid #e88aad;
+  padding-bottom: 5px;
+}
+.info p span {
+  font-weight: bold;
+}
+.skills img {
+  width: 40px;
+  margin-right: 10px;
+}
+.flex {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.box {
+  background: #f7f3f5;
+  padding: 15px;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 250px;
+}
