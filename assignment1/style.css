@@ -1,6 +1,8 @@
 body {
   font-family: "Raleway", sans-serif;
-  background-image: #e88aad;
+  background-image: url("pink-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0;
   padding: 0;
   color: #333;
