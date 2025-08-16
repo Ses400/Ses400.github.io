@@ -1,3 +1,4 @@
+/* ---------- global styles ---------- */
 body {
   font-family: "Raleway", sans-serif;
   background-image: url("pink-bg.png");
@@ -10,31 +11,33 @@ body {
 
 article {
   margin-bottom: 1rem;
-  cursor: pointer;
+  cursor: pointer; /* show pointer cursor on hover */
   background: white;
-  transition: 100ms;
+  transition: 100ms; /* smooth transition on hover */
+  /* hover effect for article */
   &:hover {
     background: var(--custom_color);
   }
 
+  /* default link */
   /* https://minjeaseo.com/ */
   a:link {
     color: #e88aad;
     text-decoration: none;
   }
-
+  /* visited link */
   /* https://minjeaseo.com/ */
   a:visited {
     color: #e88aad;
     text-decoration: none;
   }
-
+  /* active link (when clicked) */
   /* https://minjeaseo.com/*/
   a:active {
     color: #e88aad;
     text-decoration: none;
   }
-
+  /* hover link */
   /* https://minjeaseo.com/*/
   a:hover {
     color: #ffffff;
@@ -42,10 +45,12 @@ article {
   }
 }
 
+/* ---------- list styling ---------- */
 li {
   line-height: 1.6;
 }
 
+/* ---------- container Box ---------- */
 .container {
   max-width: 900px;
   margin: auto;
@@ -53,6 +58,8 @@ li {
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  /* ---------- header Section ---------- */
 }
 header {
   display: flex;
@@ -60,10 +67,10 @@ header {
   gap: 20px;
 }
 header img {
-  border-radius: 50%;
+  border-radius: 50%; /* make profile image circular */
   width: 150px;
   height: 150px;
-  object-fit: cover;
+  object-fit: cover; /* prevent image distortion */
 }
 
 header h1 {
@@ -73,6 +80,7 @@ header h1 {
   margin: 0;
 }
 
+/* ---------- section styling ---------- */
 .section {
   margin-top: 30px;
 }
@@ -85,10 +93,11 @@ header h1 {
   padding-bottom: 5px;
 }
 
+/* ---------- flexible layout boxes ---------- */
 .flex {
-  display: flex;
+  display: flex; /* arrange side by side */
   gap: 20px;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* wrap boxes into new line if screen is small */
 }
 .box {
   background: #f7f3f5;
