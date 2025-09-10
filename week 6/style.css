@@ -1,0 +1,16 @@
+audio,
+video {
+  display: block;
+  margin-bottom: 20px;
+}
+
+button {
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+button:hover {
+  scale: 1.2;
+}
