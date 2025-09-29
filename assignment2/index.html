@@ -7,7 +7,7 @@
     <title>Study space</title>
     <link rel="shortcut icon" href="https://files.catbox.moe/drouwx.gif" />
 
-    <!-- Fonts: multiple fonts chosen to give retro, pixelated and readable feel for headers and body text -->
+    <!-- multiple fonts were chosen to give a pixelated and readable feel for headers and body text -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,7 +30,7 @@
 
   <body>
     <div id="layout">
-      <!-- Header section: includes branding. Retro pixelated fonts reinforce the study-space theme -->
+      <!-- Header section includes branding and the fonts reinforce the study theme -->
       <div id="header1">
         <div id="header2">
           <div class="sitename">
@@ -39,7 +39,7 @@
         </div>
       </div>
 
-      <!-- Navigation: simple, small buttons for page sections. Consistency in color scheme matches the player interface -->
+      <!-- Navigation is simple and there are small buttons for page sections. The consistency in color scheme matches the player interface -->
       <div id="navigation">
         <div class="navi">
           <a href="">001</a> <a href="">002</a> <a href="">003</a>
@@ -48,16 +48,16 @@
         </div>
       </div>
 
-      <!-- Left sidebar: contains album art, links, checklist, and calendar -->
+      <!-- Left sidebar contains album art, links, checklist, and calendar -->
       <div id="left1">
         <div id="left2">
           <div class="box">
-            <!-- Album cover for visual context: reinforces media-related context of page -->
+            <!-- Album cover for visual context reinforces media elated context of page -->
             <img src="Nicole_(Album)_cover.png" width="150" />
           </div>
 
           <div class="box">
-            <!-- Extra links: compact, easy-to-access links. Hover effects provide feedback -->
+            <!-- Extra links are compact, easy-to-access links and hover effects provide feedback -->
             <div class="extralinks">
               <a href="">link here</a><br />
               <a href="">link here</a><br />
@@ -67,7 +67,7 @@
           </div>
 
           <div class="box">
-            <!-- Checklist: visual task tracking. Bold items emphasize due dates. Using <li> helps with readability and accessibility -->
+            <!-- Checklist is for the study theme and bold items emphasise due dates. Using <li> helps with readability and accessibility -->
             <div class="title">Checklist</div>
             <li>due 02/10</li>
             <li>due 11/10</li>
@@ -76,7 +76,7 @@
           </div>
 
           <div class="box">
-            <!-- Calendar section: microcopy and features described inline. Conceptual notes for future development -->
+            <!-- Calendar section has microcopy and features described inline and conceptual notes for future development -->
             <div class="title">Calender</div>
             Features: can choose which customised character goes where AMOUNT OF
             HOURS PUT IT Shop: when click-> preview of the expression/ sticker
@@ -85,7 +85,7 @@
         </div>
       </div>
 
-      <!-- Main content area: includes things-to-do list and media player -->
+      <!-- Main content area includes a to do list and media player -->
       <div id="content1">
         <div id="content2">
           <div class="box">
@@ -99,7 +99,7 @@
             </ul>
           </div>
 
-          <!-- Media player container: context = study environment where user can play focus tracks -->
+          <!-- Media player container context = study environment where user can play focus tracks -->
           <main class="container">
             <div class="media-player">
               <video id="custom-video-player" controls>
@@ -109,7 +109,7 @@
                 />
               </video>
 
-              <!-- Horizontal playlist: interactive feature to enhance UX. Flexbox + overflow-x allows smooth horizontal scrolling -->
+              <!-- Horizontal playlist is an interactive feature to enhance UX and the flexbox + overflow-x allows smooth horizontal scrolling -->
               <div class="playlist">
                 <div class="title">Playlist</div>
                 <div class="playlist-wrapper">
@@ -117,31 +117,18 @@
                     &#10094;
                   </button>
                   <div class="playlist-items">
-                    <!-- Each track has a data-src attribute for play interaction. Hover + active states provide visual feedback -->
                     <img
                       class="track"
                       src="Ariana_Grande_-_Eternal_Sunshine.png"
-                      data-src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4"
                       width="100"
                     />
-                    <img
-                      class="track"
-                      src="New_Jeans_(EP).jpg"
-                      data-src="https://example.com/track2.mp4"
-                      width="100"
-                    />
+                    <img class="track" src="New_Jeans_(EP).jpg" width="100" />
                     <img
                       class="track"
                       src="Laufey_-_Bewitched.png"
-                      data-src="https://example.com/track3.mp4"
                       width="100"
                     />
-                    <img
-                      class="track"
-                      src="qhez-lke.webp"
-                      data-src="https://example.com/track4.mp4"
-                      width="100"
-                    />
+                    <img class="track" src="qhez-lke.webp" width="100" />
                   </div>
                   <button class="scroll-btn right" onclick="scrollPlaylist(1)">
                     &#10095;

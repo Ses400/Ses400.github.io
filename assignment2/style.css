@@ -40,13 +40,13 @@ body {
   border-radius: 3px;
 }
 
-/* Hover effect: subtle zoom and color highlight for interactivity feedback */
+/* Hover effect has a subtle zoom and color highlight for interactivity feedback */
 .playlist-items img:hover {
   transform: scale(1.05);
   border-color: #e4afa7;
 }
 
-/* Active track styling: shows clearly which track is playing */
+/* Active track styling shows clearly which track is playing */
 .playlist-items img.active {
   border-color: #e02650;
   box-shadow: 0 0 10px #e02650; /* Gives glowing retro effect */
@@ -134,7 +134,7 @@ img {
   line-height: 60px;
 }
 
-/* Site name with retro pixel font and dotted underline to mimic old-school graphics */
+/* Site name withthe font and dotted underline to mimic old school graphics */
 .sitename a {
   color: #e02650;
   text-transform: uppercase;
@@ -148,7 +148,7 @@ img {
   color: #a38985; /* Hover feedback to indicate interactivity */
 }
 
-/* Navigation links: small, pill-shaped buttons consistent with retro aesthetics */
+/* Navigation links are small, pill-shaped buttons consistent with clean aesthetics */
 #navigation {
   width: 540px;
   text-align: center;
@@ -194,7 +194,7 @@ img {
   background: transparent;
 }
 
-/* Media player styling: full-width for video, fits playlist layout */
+/* Media player styling is full-width for video, fits playlist layout */
 .media-player {
   width: 100%;
   margin: 0 auto;
@@ -203,7 +203,7 @@ img {
   max-width: 100%;
 }
 
-/* Box styling: uses border-image for retro/ornate frame effect */
+/* Box styling uses border-image for retro/ornate frame effect */
 .box {
   border-width: 8px;
   border-style: solid;
@@ -224,7 +224,7 @@ img {
   margin-bottom: 8px;
 }
 
-/* Titles: uppercase, bold, and dashed underline for retro header styling */
+/* Titles are uppercase, bold, and dashed underline for retro header styling */
 .title {
   font: bold 10px calibri;
   color: #e4afa7;
