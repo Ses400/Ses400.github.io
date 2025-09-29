@@ -3,301 +3,155 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Study space</title>
+    <link rel="shortcut icon" href="https://files.catbox.moe/drouwx.gif" />
+
+    <!-- Fonts: multiple fonts chosen to give retro, pixelated and readable feel for headers and body text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Press+Start+2P&family=Silkscreen:wght@400;700&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main stylesheet controlling the layout, media player, and playlist design -->
     <link rel="stylesheet" href="style.css" />
-    <title>Music Player Platform</title>
+    <script src="script.js"></script>
   </head>
 
   <body>
-    <div class="container">
-      <aside class="sidebar">
-        <div class="logo">
-          <button class="menu-btn" id="menu-close">
-            <i class="bx bx-log-out-circle"></i>
-          </button>
-          <i class="bx bx-pulse"></i>
-        </div>
-
-        <div class="menu">
-          <h5>Menu</h5>
-          <ul>
-            <li>
-              <i class="bx bxs-bolt-circle"></i>
-              <a href="#">Explore</a>
-            </li>
-            <li>
-              <i class="bx bxs-volume-full"></i>
-              <a href="#">Genres</a>
-            </li>
-            <li>
-              <i class="bx bxs-album"></i>
-              <a href="#">Albums</a>
-            </li>
-            <li>
-              <i class="bx bxs-microphone"></i>
-              <a href="#">Artists</a>
-            </li>
-            <li>
-              <i class="bx bxs-radio"></i>
-              <a href="#">Podcasts</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="menu">
-          <h5>Library</h5>
-          <ul>
-            <li>
-              <i class="bx bx-undo"></i>
-              <a href="#">Recent</a>
-            </li>
-            <li>
-              <i class="bx bxs-photo-album"></i>
-              <a href="#">Albums</a>
-            </li>
-            <li>
-              <i class="bx bxs-heart"></i>
-              <a href="#">Favourites</a>
-            </li>
-            <li>
-              <i class="bx bxs-folder"></i>
-              <a href="#">Local</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="menu">
-          <h5>Playlist</h5>
-          <ul>
-            <li>
-              <i class="bx bxs-plus-square"></i>
-              <a href="#">Create New</a>
-            </li>
-            <li>
-              <i class="bx bxs-caret-right-circle"></i>
-              <a href="#">Best of 2023</a>
-            </li>
-            <li>
-              <i class="bx bxs-caret-right-circle"></i>
-              <a href="#">Best of 2022</a>
-            </li>
-            <li>
-              <i class="bx bxs-caret-right-circle"></i>
-              <a href="#">Kael Fischer</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="playing">
-          <div class="top">
-            <img src="assets/current.png" />
-            <h4>Apple<br />Homepod</h4>
-          </div>
-          <div class="bottom">
-            <i class="bx bx-podcast"></i>
-            <p>Playing On Device</p>
-          </div>
-        </div>
-      </aside>
-
-      <main>
-        <header>
-          <div class="nav-links">
-            <button class="menu-btn" id="menu-open">
-              <i class="bx bx-menu"></i>
-            </button>
-            <a href="#">Music</a>
-            <a href="#">Live</a>
-            <a href="#">Podcast</a>
-          </div>
-
-          <div class="search">
-            <i class="bx bx-search"></i>
-            <input type="text" placeholder="Type here to search" />
-          </div>
-        </header>
-
-        <div class="trending">
-          <div class="left">
-            <h5>Trending New Song</h5>
-            <div class="info">
-              <h2>Lost Emotions</h2>
-              <h4>Rion Clarke</h4>
-              <h5>63 Million Plays</h5>
-              <div class="buttons">
-                <button>Listen Now</button>
-                <i class="bx bxs-heart"></i>
-              </div>
-            </div>
-          </div>
-          <img src="Laufey_-_Bewitched.png" />
-        </div>
-
-        <div class="playlist">
-          <div class="genres">
-            <div class="header">
-              <h5>Genres</h5>
-              <a href="#">See all</a>
-            </div>
-
-            <div class="items">
-              <div class="item">
-                <p>Electro<br />Pop</p>
-              </div>
-              <div class="item">
-                <p>Dance<br />Beeat</p>
-              </div>
-              <div class="item">
-                <p>Clubhouse<br />Remix</p>
-              </div>
-              <div class="item">
-                <p>Hip Hop<br />Rap</p>
-              </div>
-              <div class="item">
-                <p>Alternative<br />Indie</p>
-              </div>
-              <div class="item">
-                <p>Classical<br />Period</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="music-list">
-            <div class="header">
-              <h5>Top Songs</h5>
-              <a href="#">See all</a>
-            </div>
-
-            <div class="items">
-              <div class="item">
-                <div class="info">
-                  <p>01</p>
-                  <img src="assets/song-1.png" />
-                  <div class="details">
-                    <h5>Sunrise</h5>
-                    <p>Lila Rivera</p>
-                  </div>
-                </div>
-                <div class="actions">
-                  <p>03:45</p>
-                  <div class="icon">
-                    <i class="bx bxs-right-arrow"></i>
-                  </div>
-                  <i class="bx bxs-plus-square"></i>
-                </div>
-              </div>
-              <div class="item">
-                <div class="info">
-                  <p>02</p>
-                  <img src="assets/song-2.png" />
-                  <div class="details">
-                    <h5>Voyage</h5>
-                    <p>Tyde Brennnan</p>
-                  </div>
-                </div>
-                <div class="actions">
-                  <p>04:35</p>
-                  <div class="icon">
-                    <i class="bx bxs-right-arrow"></i>
-                  </div>
-                  <i class="bx bxs-plus-square"></i>
-                </div>
-              </div>
-              <div class="item">
-                <div class="info">
-                  <p>03</p>
-                  <img src="assets/song-3.png" />
-                  <div class="details">
-                    <h5>Breeze</h5>
-                    <p>Sola Kim</p>
-                  </div>
-                </div>
-                <div class="actions">
-                  <p>04:22</p>
-                  <div class="icon">
-                    <i class="bx bxs-right-arrow"></i>
-                  </div>
-                  <i class="bx bxs-plus-square"></i>
-                </div>
-              </div>
-              <div class="item">
-                <div class="info">
-                  <p>04</p>
-                  <img src="assets/song-4.png" />
-                  <div class="details">
-                    <h5>Twilight</h5>
-                    <p>Jett Lawsonn</p>
-                  </div>
-                </div>
-                <div class="actions">
-                  <p>03:17</p>
-                  <div class="icon">
-                    <i class="bx bxs-right-arrow"></i>
-                  </div>
-                  <i class="bx bxs-plus-square"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
-
-      <div class="right-section">
-        <div class="profile">
-          <i class="bx bxs-bell"></i>
-          <i class="bx bxs-cog"></i>
-          <div class="user">
-            <div class="left">
-              <img src="assets/profile.png" />
-            </div>
-            <div class="right">
-              <h5>Sue-Jee J</h5>
-            </div>
-          </div>
-        </div>
-
-        <div class="music-player">
-          <div class="top-section">
-            <div class="header">
-              <h5>Player</h5>
-              <i class="bx bxs-playlist"></i>
-            </div>
-            <div class="song-info">
-              <img src="assets/player.png" />
-              <div class="description">
-                <h3>Ripple Echoes</h3>
-                <h5>Kael Fischer</h5>
-                <p>Best of 2024</p>
-              </div>
-              <div class="progress">
-                <p>02:45</p>
-                <div class="active-line"></div>
-                <div class="deactive-line"></div>
-                <p>01:02</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="player-actions">
-            <div class="buttons">
-              <i class="bx bx-repeat"></i>
-              <i class="bx bx-first-page"></i>
-              <i class="bx bxs-right-arrow play-button"></i>
-              <i class="bx bx-last-page"></i>
-              <i class="bx bx-transfer-alt"></i>
-            </div>
-            <div class="lyrics">
-              <i class="bx bx-chevron-up"></i>
-              <h5>LYRICS</h5>
-            </div>
+    <div id="layout">
+      <!-- Header section: includes branding. Retro pixelated fonts reinforce the study-space theme -->
+      <div id="header1">
+        <div id="header2">
+          <div class="sitename">
+            <center><a href="">Study space</a></center>
           </div>
         </div>
       </div>
-    </div>
 
-    <script src="script.js"></script>
+      <!-- Navigation: simple, small buttons for page sections. Consistency in color scheme matches the player interface -->
+      <div id="navigation">
+        <div class="navi">
+          <a href="">001</a> <a href="">002</a> <a href="">003</a>
+          <a href="">004</a> <a href="">005</a> <a href="">006</a>
+          <a href="">007</a>
+        </div>
+      </div>
+
+      <!-- Left sidebar: contains album art, links, checklist, and calendar -->
+      <div id="left1">
+        <div id="left2">
+          <div class="box">
+            <!-- Album cover for visual context: reinforces media-related context of page -->
+            <img src="Nicole_(Album)_cover.png" width="150" />
+          </div>
+
+          <div class="box">
+            <!-- Extra links: compact, easy-to-access links. Hover effects provide feedback -->
+            <div class="extralinks">
+              <a href="">link here</a><br />
+              <a href="">link here</a><br />
+              <a href="">link here</a><br />
+              <a href="">link here</a>
+            </div>
+          </div>
+
+          <div class="box">
+            <!-- Checklist: visual task tracking. Bold items emphasize due dates. Using <li> helps with readability and accessibility -->
+            <div class="title">Checklist</div>
+            <li>due 02/10</li>
+            <li>due 11/10</li>
+            <li>due 2/10</li>
+            <b>due</b>
+          </div>
+
+          <div class="box">
+            <!-- Calendar section: microcopy and features described inline. Conceptual notes for future development -->
+            <div class="title">Calender</div>
+            Features: can choose which customised character goes where AMOUNT OF
+            HOURS PUT IT Shop: when click-> preview of the expression/ sticker
+            Shop microcopy: sell diff expressions/poses-
+          </div>
+        </div>
+      </div>
+
+      <!-- Main content area: includes things-to-do list and media player -->
+      <div id="content1">
+        <div id="content2">
+          <div class="box">
+            <div class="title">Things to do</div>
+            <!-- Unordered list enhances scan-ability and task comprehension -->
+            <ul>
+              onboarding/ tutorial Start a 25-minute Pomodoro work session
+              Complete your work while timer runs in background (Home Screen)
+              Once timer ends, you enter a 5-minute mini-game break session Play
+              the game (finishes at 4mins 30)
+            </ul>
+          </div>
+
+          <!-- Media player container: context = study environment where user can play focus tracks -->
+          <main class="container">
+            <div class="media-player">
+              <video id="custom-video-player" controls>
+                <source
+                  src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4"
+                  type="video/mp4"
+                />
+              </video>
+
+              <!-- Horizontal playlist: interactive feature to enhance UX. Flexbox + overflow-x allows smooth horizontal scrolling -->
+              <div class="playlist">
+                <div class="title">Playlist</div>
+                <div class="playlist-wrapper">
+                  <button class="scroll-btn left" onclick="scrollPlaylist(-1)">
+                    &#10094;
+                  </button>
+                  <div class="playlist-items">
+                    <!-- Each track has a data-src attribute for play interaction. Hover + active states provide visual feedback -->
+                    <img
+                      class="track"
+                      src="Ariana_Grande_-_Eternal_Sunshine.png"
+                      data-src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4"
+                      width="100"
+                    />
+                    <img
+                      class="track"
+                      src="New_Jeans_(EP).jpg"
+                      data-src="https://example.com/track2.mp4"
+                      width="100"
+                    />
+                    <img
+                      class="track"
+                      src="Laufey_-_Bewitched.png"
+                      data-src="https://example.com/track3.mp4"
+                      width="100"
+                    />
+                    <img
+                      class="track"
+                      src="qhez-lke.webp"
+                      data-src="https://example.com/track4.mp4"
+                      width="100"
+                    />
+                  </div>
+                  <button class="scroll-btn right" onclick="scrollPlaylist(1)">
+                    &#10095;
+                  </button>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
