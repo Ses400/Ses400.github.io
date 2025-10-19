@@ -1,3 +1,13 @@
+//This JavaScript code creates a 3x3 image-based sliding puzzle that users can interact with by dragging and dropping tiles.
+//The code integrates **usability principles, visual calmness, and consistent feedback**, aligning with a gentle,
+//pastel themed aesthetic (as seen in the linked CSS).
+
+//This design aims to be approachable and stress-free—drawing from **mindfulness-based UI values** often found in
+//well-being apps and calming interaction games like "Alto’s Odyssey" and "Monument Valley" (ustwo games, 2014–2018).
+
+//By integrating gentle colors (#a597ff and #c9c1ff), soft feedback, and simple movement logic,
+//this project fosters focus and small satisfaction moments through completion and user control.
+
 var rows = 3;
 var columns = 3;
 
@@ -12,6 +22,11 @@ var imgOrder = [...correctOrder]; // starts in order
 window.onload = function () {
   shuffleArray(imgOrder); // start shuffled
   createBoard();
+
+  //Usability and Feedback:**
+  //Users receive immediate visual feedback through tile swapping and a
+  //“Puzzle Completed!” message upon success.
+  //The “Turns” counter provides progress awareness—a subtle motivator that keeps engagement
 
   document.getElementById("shuffleBtn").addEventListener("click", shuffleBoard);
   document.getElementById("restartBtn").addEventListener("click", restartBoard);
@@ -30,6 +45,11 @@ function createBoard() {
       tile.src = orderCopy.shift() + ".jpg";
 
       // Drag functionality
+      //Interaction Design:
+      //Drag and drop mechanics offer direct manipulation feedback
+      //This choice allows users to intuitively understand how tiles move without explicit tutorials.
+      //Adjacency constraints (only up/down/left/right swaps) prevent chaotic motion,
+      //reinforcing a sense of gentle order and predictability which is core to mindful game design.
       tile.addEventListener("dragstart", dragStart);
       tile.addEventListener("dragover", dragOver);
       tile.addEventListener("dragenter", dragEnter);
@@ -114,6 +134,11 @@ function checkCompletion() {
   }
 }
 
+//Structure and Learnability:**
+//The interface includes clearly labeled shuffle and restart buttons.
+//Both use consistent color and typography for affordance and readability.
+//The layout is centered and minimalistic, avoiding distractions and guiding focus to the puzzle itself.
+
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -136,3 +161,14 @@ function restartBoard() {
   document.getElementById("message").innerText = "";
   createBoard();
 }
+
+//Implementation Challenges:**
+//One challenge lies in **drag sensitivity and mobile compatibility since HTML5 drag events
+//perform inconsistently across touch devices. A future version could employ pointer events
+//or custom gesture listeners to improve accessibility and tactile precision.
+
+//Future Benefits and Scalability:**
+//This prototype demonstrates scalable potential images can be dynamically loaded,
+//puzzle sizes adjusted, and mechanics gamified (e.g., time tracking, levels, or achievement badges).
+//The same feedback system could extend into educational or wellness apps
+//where reflective interaction and visual calm reinforce learning or relaxation.

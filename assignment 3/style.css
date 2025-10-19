@@ -3,6 +3,11 @@ body {
   text-align: center;
   color: #a597ff;
 }
+/*Visual Context and Color:
+  The color palette uses lavender and cream tones (#a597ff, #c9c1ff, #f2ebff).  
+  This was influenced by pastel UI trends and soft UI design theory, emphasising low contrast 
+  and rounded edges to reduce cognitive fatigue. The design supports a 
+  tranquil and youthful atmosphere fitting for mindfulness contexts.*/
 
 #title {
   height: 350px;
